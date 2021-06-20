@@ -1,0 +1,24 @@
+.single_service {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 10px;
+    background: #373b56;
+    color: white;
+}
+.span {
+    border: 1px solid tomato;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+button {
+    border: none;
+    background: #373b56;
+    color: white;
+    padding: 10px 0px;
+}
+.lll {
+    padding: 10px;
+}

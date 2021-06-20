@@ -1,0 +1,91 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #373b56;
+}
+ul.navlinks {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    width: 78%;
+}
+ul.navlinks li{
+    padding: 20px;
+}
+.navbar img{
+    width: 50px;
+}
+.home,
+.about,
+.skill,
+.contact,
+.signup{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.signup{
+    border: 1px solid yellow;
+    padding: 6px;
+    border-radius: 5px;
+}
+ul.navlinks li a:hover {
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+.signup:hover {
+    color: white !important;
+    border-bottom: 1px solid yellow !important;
+}
+.mobile_menu_icon{
+    display: none;
+}
+
+@media screen and (max-width:780px) {
+    ul.navlinks{
+        /* transform: scaleY(0.2);
+        Ttransition: 0.5s; */
+        display: none;
+        
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .mobile_menu_icon{
+        display: block;
+        font-size: 30px;
+        background: none ;
+        border: none;
+        outline: none;
+        color: white;
+        transition: 0.5s;
+        cursor: pointer;
+        padding: 0px 10px;
+    }
+    .nav_links_mobile{
+        list-style: none;
+        display: block;
+        background: orange;
+        width: 100%;
+        top: 54px;
+        position: absolute;
+        height: 560%;
+        padding: 10px;
+        transition: 0.5s;
+        transform: scaleY(1);
+        z-index: 10;
+        
+    }
+    .home,
+    .about,
+    .skill,
+    .contact,
+    .signup{
+        color: white;
+        text-align: center;
+        padding: 18px;
+        width: 100%;
+        display: block;
+    }
+}
